@@ -1,3 +1,4 @@
+/* Estilos gerais */
 *{
     margin: 0;
     padding: 0;
@@ -26,7 +27,7 @@
     width: 40%;
     position: absolute;
 }
-    
+ 
 img {
     position: relative;
     top: 25%;
@@ -39,7 +40,6 @@ h1 {
 }
     
 p {
-    
     font-size: 28px;
     line-height: 48px;
     opacity: 0.6;
@@ -51,7 +51,7 @@ button {
     width: 269px;
     height: 62px;
     background:#9499EA;
-    box-shadow: 0px 10px 24px rgbargba(148,.153,.234,.0.0979959);
+    box-shadow: 0px 10px 24px rgba(148,153,234,0.1);
     border: none;
     border-radius: 30px;
     font-size: 24px;
@@ -91,4 +91,103 @@ a:active {
 
 header {
     margin: 24px 0 0 57px;
+}
+
+/* Estilos para tablets e monitores menores (901px - 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+    .container-left {
+        width: 50%;
+        padding-left: 50px;
+        margin-top: 10%;
+    }
+
+    .container-right {
+        width: 50%;
+        position: static;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 36px;
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    img {
+        max-width: 80%;
+        position: static;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    button {
+        margin: 20px auto;
+    }
+
+    header {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    a {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Estilos para smartphones (até 900px) */
+@media screen and (max-width: 900px){
+    .container-left {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .container-right {
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+        padding: 40px;
+    }
+
+    img {
+        position: static;
+        max-width: 90%;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+    }
+    
+    p {
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    button {
+        margin: 0 auto;
+        display: block;
+    }
 }
